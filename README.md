@@ -1,2 +1,1 @@
-# cp2019
-https://localhost:9443/get_page/First
+# cp2019https://40823145.github.io/cp2019/content/index.html
