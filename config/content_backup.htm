@@ -1,4 +1,5 @@
-<h1>First</h1><br/>First<br/><img alt="" height="591" src="/images/giphy.gif" width="705"/>
+<h1>First</h1>
+<p><br/><img alt="" height="591" src="/images/giphy.gif" width="705"/></p>
 <p><a href="https://dartpad.dev?id=01e98ffe0e2ca58c2c6606d6d43b9ca4">https://dartpad.dev?id=01e98ffe0e2ca58c2c6606d6d43b9ca4 </a> </p>
 <p></p>
 <p><iframe height="500" src="https://dartpad.dev/embed-inline.html?id=01e98ffe0e2ca58c2c6606d6d43b9ca4" width="523"></iframe></p>
@@ -12,9 +13,133 @@
 <p><iframe height="500" src="https://dartpad.dev/embed-inline.html?id=7da6d356eeb403ed180b6e531ade7a01" width="523"></iframe></p>
 <p></p>
 </div>
-<h2><span>常微分方程式</span></h2>
+<h2>常微分方程式</h2>
 <p><span>dart<a href="https://dartpad.dev/?id=7da6d356eeb403ed180b6e531ade7a01">:</a><a href="https://dartpad.dev/?id=28009ef9657d9ca684f729838ce4afcc">https://dartpad.dev/?id=28009ef9657d9ca684f729838ce4afcc</a><a href="https://dartpad.dev/?id=7da6d356eeb403ed180b6e531ade7a01"></a></span></p>
 <p><span>gist:<a href="https://gist.github.com/40823145/28009ef9657d9ca684f729838ce4afcc">https://gist.github.com/40823145/28009ef9657d9ca684f729838ce4afcc</a></span></p>
 <p><iframe height="500" src="https://dartpad.dev/embed-inline.html?id=28009ef9657d9ca684f729838ce4afcc" width="523"></iframe></p>
 <p><img alt="" height="288" src="/images/模擬.png" width="480"/></p>
 <p><img alt="" height="290" src="/images/模擬2.png" width="482"/></p>
+<p></p>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<!-- 取 Dart 程式的按鈕 -->
+<p>\</p>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823125&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823125&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823125&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<h2>Dartpad</h2>
+<h4>Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('loop')">loop</button> <button onclick="getDart('dxdt')">dxdt</button> <button onclick="getDart('quizlet1')">quizlet1</button> <button onclick="getDart('quizlet2')">quizlet2</button> <button onclick="getDart('quizlet3')">quizlet3</button> <button onclick="getDart('cf')">cf</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('c,f')">cf</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823125&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/dxdt&amp;theme=dark" width="800"></iframe></p>
+<!-- for site wrap -->
+<p></p>
+<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<p>
+<script src="/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/cmsimde/static/chimper/js/aos.js"></script>
+</p>
+<p></p>
+<p>
+<script src="/cmsimde/static/chimper/js/typed.js"></script>
+<script>
+var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+</script>
+</p>
