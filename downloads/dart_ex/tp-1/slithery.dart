@@ -79,3 +79,8 @@ input, select, textarea {
 font-size: 100%;
 }
 */
+
+input, select, textarea {
+font-size: 100%;
+}
+*/
