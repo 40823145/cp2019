@@ -1,0 +1,10 @@
+html, body {
+  color: white;
+  font-size: 30px;
+}
+
+input, select, textarea {
+font-size: 50%;
+}
+
+
