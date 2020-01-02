@@ -138,7 +138,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='迴圈程式.html'>迴圈程式</a><li><a href='常微分方程式.html'>常微分方程式</a><li><a href='作業.html'>作業</a><li><a href='W16考試檢查.html'>W16考試檢查</a><li><a href='w17考試.html'>w17考試</a><li><a href='測試.html'>測試</a></li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='迴圈程式.html'>迴圈程式</a><li><a href='常微分方程式.html'>常微分方程式</a><li><a href='作業.html'>作業</a><li><a href='W16考試檢查.html'>W16考試檢查</a><li><a href='W17考試.html'>W17考試</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,12 +149,46 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">W16考試檢查 << <a href='W16考試檢查.html'>Previous</a> <a href='測試.html'>Next</a> >> 測試<br /><h1>w17考試</h1>
+    <div id="tipue_search_content">W16考試檢查 << <a href='W16考試檢查.html'>Previous</a> <br /><h1>W17考試</h1>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823145&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823145&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823145&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 --></p>
 <h4>重量單位轉換</h4>
-<h4>純Dart</h4>
-<h4>(Dart+html+css)</h4>
-<h4>Javascript</h4>
-<br />W16考試檢查 << <a href='W16考試檢查.html'>Previous</a> <a href='測試.html'>Next</a> >> 測試</div>
+<p><button onclick="getDart('kg-lb d')">Dart 程式</button><button onclick="getHtmlDart('kg-lb')">Html程式</button></p>
+<h4>國旗</h4>
+<p><button onclick="getHtmlDart('flag')">國旗</button></p>
+<p><!-- 內建放入的 Dart 原始碼 --></p>
+<p></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823145&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<div id="gtx-trans" style="position: absolute; left: 24px; top: -0.6px;">
+<div class="gtx-trans-icon"></div>
+</div><br />W16考試檢查 << <a href='W16考試檢查.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
